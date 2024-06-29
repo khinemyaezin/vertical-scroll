@@ -1,0 +1,122 @@
+:root {
+  --max-width: 1440px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+}
+
+html,
+body {
+  background-color: #000000;
+  overscroll-behavior: none;
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.scroll__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  height: 200%;
+}
+
+.container {
+  margin: auto;
+  width: 70%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  overflow: hidden;
+  font-size: clamp(2rem, 20cqi, 20rem);
+  font-weight: 700;
+}
+
+
+
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 50%;
+}
+
+.slider__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  height: 100%;
+  display: flex;
+  width: min-content;
+  overflow: hidden;
+  will-change: transform;
+}
+
+.item {
+  position: relative;
+  width: 40vw;
+  height: 100%;
+  padding: 80px 20px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .item {
+    width: 90vw;
+  }
+}
+
+.image__container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(50%);
+}
+
+.footer {
+    width: 100%;
+    padding-bottom: 5rem;
+}
