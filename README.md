@@ -1,6 +1,6 @@
 # Horizontal scroll effect
 
-Horizontal sroll effect when vertical scrolling.
+Horizontal sroll effect when vertical scrolling. [Demo](https://khinemyaezin.com/vertical-scroll)
 
 ## Features
 
